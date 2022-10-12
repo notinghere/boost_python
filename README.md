@@ -28,7 +28,8 @@ swOptions="-O3 -fPIC"
 
 ## 说明
 
-- 定义模块，模块内容为需要导出的内容
+- 定义模块，模块内容为需要导出的内容, 导出名称要和生成的so文件名一致。
+
 BOOST_PYTHON_MODULE(libWrapper) {
 }
 
