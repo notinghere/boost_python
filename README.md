@@ -4,7 +4,13 @@
 
 ## 编译
 
-正常编译 boost，增加 python 模块即可。
+1. 需要安装 python-dev.
+
+```
+apt install python-dev
+```
+
+2. 编译 boost，增加 python 模块即可。
 
 ```
 swOptions="-O3 -fPIC"
