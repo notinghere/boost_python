@@ -24,5 +24,15 @@ swOptions="-O3 -fPIC"
 
 ## 使用
 
-见 wrapper.cpp, 将需要导出供python 调用的类导出即可。
+见 wrapper.cpp, 将需要导出供python 调用的类和函数导出即可。
+
+## 说明
+
+- 定义模块，模块内容为需要导出的内容
+BOOST_PYTHON_MODULE(libWrapper) {
+}
+
+- 导出普通函数,类的函数
+boost::python::def()
+
 
